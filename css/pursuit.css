@@ -7,6 +7,7 @@ body {background:#fff;}
 .wrap {max-width: 1200px; margin:0 auto;}
 .row {margin-left: 0;margin-right: 0;}
 
+nav {box-shadow: 0 1px 5px rgba(0,0,0,.2);}
 .navbar-default {background:#fff; border:none; margin:0; padding:10px 0;}
 .navbar-default .navbar-brand { font-family: OutageCut, Helvetica, Arial, sans-serif; font-size:30px; line-height: .87; color: #f38a93; text-shadow: -2px 2px #fed3b5; }
 .navbar-default .navbar-brand:hover { color:#888; }
@@ -24,7 +25,7 @@ body {background:#fff;}
   .button-container > a:hover, .button-container > a:focus {color:#fecacb; background: #333; text-decoration: none;}
 
 
-.intro {height:100vh; display: flex; flex-direction:row; align-items:center;}
+.intro {min-height:100vh; padding:100px 0 30px 0;display: flex; flex-direction:row; align-items:center;}
   .intro * {padding: 0;}
   .intro h1 { font-size:80px;padding-left: 20vw; color: #fff; text-align: right;}
   .intro h2 {color:#fff; font-size: 28px; text-align: left;}
@@ -45,7 +46,7 @@ body {background:#fff;}
 
 .section-title {padding:60px 0;}
 
-.about-us {padding:60px 0;}
+.about-us {padding:60px 0 120px 0; margin:0;}
   .about-us p, .about-us h4 {text-align: center;}
   .about-us p .small {opacity:.65;}
   .about-us img {max-width:275px; margin-bottom: 20px;}
@@ -55,7 +56,7 @@ body {background:#fff;}
   .about-us .profile   .button-container > a:hover, .button-container > a:focus {color:#fff;}
 
 
-.contact-us {display: flex; justify-content: center; flex-direction: column; height:50vh;}
+.contact-us {display: flex; justify-content: center; flex-direction: column; min-height:50vh;}
 
 .footer {padding-top:90px; opacity: .5;}
 
@@ -65,7 +66,10 @@ body {background:#fff;}
 
 @media screen and (max-width: 1000px) {
   .intro {flex-direction:column-reverse;justify-content: center;}
-  .intro h1 {padding: 0 0 20px 0; width:80%; text-align: center; font-size: 60px;}
-  .intro h2 {text-align: center; font-size: 24px;}
+  .intro h1 {padding: 0 0 20px 0; margin:0; width:80%; text-align: center; font-size: 60px;}
+  .intro h2 {text-align: center; font-size: 24px; margin:0;}
   .intro .seperator {margin:15px auto;}
+}
+@media screen and (max-width: 500px) {
+  .intro h1 {width:90%; text-align: center; font-size: 50px;}
 }
